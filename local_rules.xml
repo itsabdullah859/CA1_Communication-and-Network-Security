@@ -1,0 +1,40 @@
+<group name="custom-detections">
+
+	<rule id="777111" level="10">
+		<if_sid>60103</if_sid>
+		<description> Windows account created</description>
+		<mitre>
+			<id>T1059.001</id>
+		</mitre>
+	</rule>
+
+	<rule id="777222" level="10">
+		<if_sid>60122</if_sid>
+		<description> Multiple failed login attempts</description>
+		<mitre>
+			<id>T1110</id>
+		</mitre>
+	</rule>
+
+	<rule id="777333" level="8">
+		<if_sid>60642</if_sid>
+		<description>Custom Detection: Windows Software Protection Service Activity Detected</description>
+	</rule>
+
+
+	<rule id="777444" level="9">
+		<if_sid>5301</if_sid>
+		<description>Failed attempt to switch user</description>
+		<mitre>
+			<id>T1548</id>
+		</mitre>
+	</rule>
+	<rule id="777555" level="10">
+		<if_sid>2834</if_sid>
+		<description> Multiple crontabs edits detected</description>
+		<mitre>
+			<id>T1136</id>
+		</mitre>
+	</rule>
+
+</group>
